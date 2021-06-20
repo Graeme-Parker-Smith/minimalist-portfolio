@@ -1,0 +1,92 @@
+.hero {
+    position: relative;
+
+    .trim {
+        max-height: 600px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__group {
+        @include breakpoint-up(medium) {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            background-color: #ffffff;
+            width: 32.125rem;
+            height: 17.375rem;
+        }
+        @include breakpoint-up(large) {
+            bottom: 60px;
+        }
+
+        &__heading {
+            font-size: 2.5rem;
+            font-family: $ibarra;
+            font-weight: bold;
+            line-height: 42px;
+            letter-spacing: -0.36px;
+            margin-bottom: 2rem;
+
+            @include breakpoint-up(medium) {
+                margin-bottom: 0;
+                padding-top: 3.5rem;
+                padding-bottom: 3.5rem;
+            }
+        }
+
+        &__button {
+            border: none;
+            background: $darkBlue;
+            width: 200px;
+            height: 48px;
+            padding: 0;
+            display: flex;
+            font-family: $public;
+            letter-spacing: 2px;
+            font-size: $font-sm;
+            cursor: pointer;
+
+            &:hover {
+                background: $cyan;
+
+                g {
+                    stroke: white;
+                }
+            }
+
+            > div:first-child {
+                height: 48px;
+                width: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: #000000;
+                    opacity: 10%;
+                }
+            }
+
+            > div:last-child {
+                height: 100%;
+                color: white;
+                text-transform: uppercase;
+                flex-grow: 1;
+                line-height: 48px;
+            }
+        }
+    }
+}

@@ -17,6 +17,12 @@
                 transform: rotate(-45deg);
             }
         }
+
+        .header__menu {
+            display: block;
+            position: absolute;
+            right: 0;
+        }
     }
 
     nav {
@@ -55,6 +61,7 @@
         width: 14rem;
         height: 11.625rem;
         margin: 0 2rem 0 auto;
+        display: none;
 
         a {
             font-size: $font-sm;
