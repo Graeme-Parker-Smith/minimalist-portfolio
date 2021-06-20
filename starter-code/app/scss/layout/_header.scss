@@ -1,14 +1,33 @@
 .header {
-
     &__links {
-
         a {
-            font-size: $font-sm;
             // margin: 0 3.125rem;
+            font-size: $font-sm;
+            transition: 200ms ease-in-out;
+            padding: 1rem;
 
             &:not(:last-child) {
-                margin-right: 3.125rem;
+                margin-right: 1.125rem;
             }
+
+            &:hover {
+                color: $cyan;
+            }
+        }
+    }
+
+    &__menu {
+        background: $grayishDarkBlue;
+        padding: 1.625rem;
+        width: 14rem;
+        height: 11.625rem;
+        margin: 0 2rem 0 auto;
+
+        a {
+            padding: 0.625rem;
+            display: block;
+            color: #ffffff;
+            text-align: center;
         }
     }
 }
