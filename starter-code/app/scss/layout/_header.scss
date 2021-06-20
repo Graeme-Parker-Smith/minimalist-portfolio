@@ -1,0 +1,14 @@
+.header {
+
+    &__links {
+
+        a {
+            font-size: $font-sm;
+            // margin: 0 3.125rem;
+
+            &:not(:last-child) {
+                margin-right: 3.125rem;
+            }
+        }
+    }
+}

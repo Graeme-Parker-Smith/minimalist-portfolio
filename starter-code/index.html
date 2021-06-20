@@ -15,12 +15,17 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav class="container container--pall flex flex-jc-sb flex-ai-c">
+			<nav class="container container--py flex flex-jc-sb flex-ai-c">
 				<a href="/" class="header__logo">
 					<img src="images/logo.svg" alt="logo"  />
 				</a>
-				<div class="header__toggle hide-for-desktop" aria-expanded="false" aria-controls="menu">
-					<img src="images/icons/hamburger.svg" alt="hamburger">
+				<a class="header__toggle hide-for-desktop" aria-expanded="false" aria-controls="menu">
+					<img src="images/icons/hamburger.svg" alt="toggle navigation">
+				</a>
+				<div class="header__links hide-for-mobile">
+					<a href="#">Home</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Contact Me</a>
 				</div>
 			</nav>
 		</header>
