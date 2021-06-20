@@ -1,19 +1,50 @@
 .header {
-    &__links {
-        a {
-            // margin: 0 3.125rem;
-            font-size: $font-sm;
-            transition: 200ms ease-in-out;
-            padding: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
 
-            &:not(:last-child) {
-                margin-right: 1.125rem;
+    // Hamburger Open Styles
+    &.open {
+        .header__toggle {
+            > span:first-child {
+                transform: rotate(45deg);
             }
 
-            &:hover {
-                color: $cyan;
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+        padding-top: 1.375rem;
+        padding-bottom: 1.375rem;
+    }
+
+    &__logo {
+        img {
+            width: 3.8125rem;
+            height: 2rem;
+        }
+    }
+
+    &__toggle {
+        // Mobile Menu Toggle
+
+        > span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $darkBlue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
             }
         }
     }
@@ -33,6 +64,25 @@
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
+        }
+    }
+
+    &__links {
+        a {
+            // margin: 0 3.125rem;
+            font-size: $font-sm;
+            transition: 200ms ease-in-out;
+            padding: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            &:not(:last-child) {
+                margin-right: 1.125rem;
+            }
+
+            &:hover {
+                color: $cyan;
+            }
         }
     }
 }
