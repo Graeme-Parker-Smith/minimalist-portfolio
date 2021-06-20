@@ -5,6 +5,8 @@
             font-size: $font-sm;
             transition: 200ms ease-in-out;
             padding: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
 
             &:not(:last-child) {
                 margin-right: 1.125rem;
@@ -18,16 +20,19 @@
 
     &__menu {
         background: $grayishDarkBlue;
-        padding: 1.625rem;
+        padding: 1.03125rem;
         width: 14rem;
         height: 11.625rem;
         margin: 0 2rem 0 auto;
 
         a {
-            padding: 0.625rem;
+            font-size: $font-sm;
+            padding: 1.125rem;
             display: block;
             color: #ffffff;
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
     }
 }
