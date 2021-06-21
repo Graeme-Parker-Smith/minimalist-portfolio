@@ -1,5 +1,4 @@
 .about {
-
     img {
         // height: 600px;
         // width: 281px;
@@ -7,7 +6,20 @@
         // flex: 1;
         width: 100%;
     }
-    
+
+    &__content {
+        h1 {
+            line-height: 42px;
+        }
+        p {
+            line-height: 30px;
+            margin: 0;
+        }
+        hr {
+            margin: 2rem auto;
+        }
+    }
+
     @include breakpoint-up(medium) {
         display: flex;
         justify-content: space-between;
@@ -19,8 +31,6 @@
         //     height: 0;
         // }
 
-
-        
         &__content {
             // display: inline;
             width: 339px;
@@ -31,15 +41,10 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: baseline;
-            h1 {
-                line-height: 42px;
-            }
+
             hr {
                 width: 100%;
                 margin: 0;
-            }
-            p {
-                line-height: 30px;
             }
         }
     }
