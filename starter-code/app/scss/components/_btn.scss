@@ -9,6 +9,7 @@
     text-transform: uppercase;
     line-height: 48px;
     display: flex;
+    transition: background 200ms ease-in-out;
     // justify-content: center;
     // align-items: center;
 
@@ -55,5 +56,9 @@
         padding-left: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+
+        &:hover {
+            background: $grayishDarkBlue;
+        }
     }
 }
