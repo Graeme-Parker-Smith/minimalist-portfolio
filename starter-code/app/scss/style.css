@@ -351,6 +351,26 @@ a:hover {
 .footer__social a:not(:last-child) {
   margin-right: 1rem;
 }
+@media (min-width: 48em) {
+  .footer {
+    height: 80px;
+    width: 100%;
+    padding: 2.5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .footer > *:not(:last-child) {
+    margin-right: 2.625rem;
+  }
+  .footer__social {
+    margin-left: auto;
+  }
+}
+@media (min-width: 64em) {
+  .footer {
+    padding: 2.5rem 10.3125rem;
+  }
+}
 
 .hero {
   position: relative;

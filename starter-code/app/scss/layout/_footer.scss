@@ -17,13 +17,29 @@
     }
 
     &__social {
-        
         a {
-
             &:not(:last-child) {
                 margin-right: 1rem;
             }
         }
+    }
+
+    @include breakpoint-up(medium) {
+        height: 80px;
+        width: 100%;
+        padding: 2.5rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        > *:not(:last-child) {
+            margin-right: 2.625rem;
+        }
+        &__social {
+            margin-left: auto;
+        }
+    }
+
+    @include breakpoint-up(large) {
+        padding: 2.5rem 10.3125rem;
     }
     // text-align: center;
     // display: flex;
