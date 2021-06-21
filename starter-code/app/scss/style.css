@@ -63,6 +63,24 @@ section {
   margin-bottom: 96px;
 }
 
+img {
+  max-width: 100%;
+}
+
+hr {
+  border-color: #33323d;
+  opacity: 15%;
+}
+
+.spacer {
+  height: 1.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Ibarra Real Nova", serif;
+}
+
 a,
 a:visited,
 a:hover {
@@ -181,6 +199,57 @@ a:hover {
   }
 }
 
+.btn {
+  height: 48px;
+  font-family: "Public Sans", sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 48px;
+  display: flex;
+}
+.btn--primary {
+  background: #203a4c;
+  width: 200px;
+}
+.btn--primary:hover {
+  background: #5fb4a2;
+}
+.btn--primary:hover g {
+  stroke: white;
+}
+.btn--primary > div:first-child {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.btn--primary > div:first-child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: 10%;
+}
+.btn--primary > div:last-child {
+  color: white;
+  flex-grow: 1;
+}
+.btn--secondary {
+  background: white;
+  border: 1px solid #33323d;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -290,50 +359,6 @@ a:hover {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
-}
-.hero__group__button {
-  border: none;
-  background: #203a4c;
-  width: 200px;
-  height: 48px;
-  padding: 0;
-  display: flex;
-  font-family: "Public Sans", sans-serif;
-  letter-spacing: 2px;
-  font-size: 0.75rem;
-  cursor: pointer;
-}
-.hero__group__button:hover {
-  background: #5fb4a2;
-}
-.hero__group__button:hover g {
-  stroke: white;
-}
-.hero__group__button > div:first-child {
-  height: 48px;
-  width: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.hero__group__button > div:first-child::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #000000;
-  opacity: 10%;
-}
-.hero__group__button > div:last-child {
-  height: 100%;
-  color: white;
-  text-transform: uppercase;
-  flex-grow: 1;
-  line-height: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

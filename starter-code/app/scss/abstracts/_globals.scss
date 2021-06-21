@@ -23,6 +23,24 @@ section {
 	margin-bottom: 96px;
 }
 
+img {
+	max-width: 100%;
+}
+
+hr {
+	border-color: $grayishDarkBlue;
+	opacity: 15%;
+}
+
+.spacer {
+	height: 1.25rem;
+}
+
+h1 {
+	font-size: $font-lg;
+	font-family: $ibarra;
+}
+
 a,
 a:visited,
 a:hover {

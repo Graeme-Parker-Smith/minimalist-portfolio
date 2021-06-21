@@ -1,0 +1,59 @@
+.btn {
+    height: 48px;
+    font-family: $public;
+    letter-spacing: 2px;
+    font-size: $font-sm;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 48px;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    &--primary {
+        background: $darkBlue;
+        width: 200px;
+
+        &:hover {
+            background: $cyan;
+
+            g {
+                stroke: white;
+            }
+        }
+
+        > div:first-child {
+            height: 48px;
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                inset: 0;
+                background: #000000;
+                opacity: 10%;
+            }
+        }
+
+        > div:last-child {
+            color: white;
+            flex-grow: 1;
+        }
+    }
+
+    &--secondary {
+        background: white;
+        border: 1px solid $grayishDarkBlue;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -39,54 +39,54 @@
             }
         }
 
-        &__button {
-            border: none;
-            background: $darkBlue;
-            width: 200px;
-            height: 48px;
-            padding: 0;
-            display: flex;
-            font-family: $public;
-            letter-spacing: 2px;
-            font-size: $font-sm;
-            cursor: pointer;
+        // &__button {
+        //     border: none;
+        //     background: $darkBlue;
+        //     width: 200px;
+        //     height: 48px;
+        //     padding: 0;
+        //     display: flex;
+        //     font-family: $public;
+        //     letter-spacing: 2px;
+        //     font-size: $font-sm;
+        //     cursor: pointer;
 
-            &:hover {
-                background: $cyan;
+        //     &:hover {
+        //         background: $cyan;
 
-                g {
-                    stroke: white;
-                }
-            }
+        //         g {
+        //             stroke: white;
+        //         }
+        //     }
 
-            > div:first-child {
-                height: 48px;
-                width: 48px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: relative;
+        //     > div:first-child {
+        //         height: 48px;
+        //         width: 48px;
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         position: relative;
 
-                &::before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    background: #000000;
-                    opacity: 10%;
-                }
-            }
+        //         &::before {
+        //             content: "";
+        //             display: block;
+        //             position: absolute;
+        //             top: 0;
+        //             right: 0;
+        //             bottom: 0;
+        //             left: 0;
+        //             background: #000000;
+        //             opacity: 10%;
+        //         }
+        //     }
 
-            > div:last-child {
-                height: 100%;
-                color: white;
-                text-transform: uppercase;
-                flex-grow: 1;
-                line-height: 48px;
-            }
-        }
+        //     > div:last-child {
+        //         height: 100%;
+        //         color: white;
+        //         text-transform: uppercase;
+        //         flex-grow: 1;
+        //         line-height: 48px;
+        //     }
+        // }
     }
 }
