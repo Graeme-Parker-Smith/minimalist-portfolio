@@ -53,7 +53,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Public Sans", sans-serif;
-  font-size: 1rem;
   font-weight: 400;
   color: #33323d;
 }
@@ -71,6 +70,13 @@ hr {
   opacity: 15%;
 }
 
+p {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Public Sans", sans-serif;
+  color: #33323d;
+}
+
 .spacer {
   height: 1.25rem;
 }
@@ -83,9 +89,17 @@ hr {
   letter-spacing: -0.36px;
 }
 
+.preview {
+  margin-bottom: 2rem;
+}
+
 h1 {
   font-size: 2.5rem;
   font-family: "Ibarra Real Nova", serif;
+}
+
+h2 {
+  margin-block: 25px;
 }
 
 a,
@@ -423,6 +437,7 @@ a:hover {
 .about__content p {
   line-height: 30px;
   margin: 0;
+  font-size: 1rem;
 }
 .about__content hr {
   margin: 2rem auto;
