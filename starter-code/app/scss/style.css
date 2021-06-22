@@ -484,4 +484,21 @@ a:hover {
   }
 }
 
+.portfolio > section .preview {
+  width: 100%;
+}
+@media (min-width: 48em) {
+  .portfolio > section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .portfolio > section > * {
+    flex-basis: calc(50% - 2rem);
+  }
+  .portfolio > section > * .preview {
+    margin-bottom: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
