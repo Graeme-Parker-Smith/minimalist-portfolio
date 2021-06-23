@@ -249,6 +249,15 @@ a:hover {
 .btn--primary {
   background: #203a4c;
   width: 200px;
+  color: white;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.btn--primary.about-btn {
+  padding: 0;
+  margin: 0;
 }
 .btn--primary:hover {
   background: #5fb4a2;
@@ -273,7 +282,6 @@ a:hover {
   opacity: 10%;
 }
 .btn--primary > div:last-child {
-  color: white;
   flex-grow: 1;
 }
 .btn--secondary {
