@@ -366,7 +366,10 @@ a:hover {
 .header__links a:not(:last-child) {
   margin-right: 1.125rem;
 }
-.header__links a:hover {
+.header__links a:hover, .header__links a:active {
+  color: #5fb4a2;
+}
+.header__links .current-link {
   color: #5fb4a2;
 }
 

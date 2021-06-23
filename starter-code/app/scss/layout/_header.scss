@@ -87,9 +87,15 @@
                 margin-right: 1.125rem;
             }
 
-            &:hover {
+            &:hover,
+            &:active {
                 color: $cyan;
             }
+
+            // change color of current page's link
+        }
+        .current-link {
+            color: $cyan;
         }
     }
 }
