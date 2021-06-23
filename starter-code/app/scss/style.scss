@@ -4,6 +4,7 @@
 @import "abstracts/globals";
 
 @import "components/btn";
+@import "components/form";
 
 @import "layout/header";
 @import "layout/footer";
@@ -12,4 +13,5 @@
 @import "sections/about";
 @import "sections/cta";
 
-@import "pages/portfolio"
+@import "pages/portfolio";
+@import "pages/contact";

@@ -147,6 +147,22 @@ a:hover {
 	&-ai-c {
 		align-items: center;
 	}
+
+	&-half {
+		flex-basis: 50%;
+	}
+
+	&--lg {
+		@include breakpoint-up(large) {
+			display: flex;
+		}
+	}
+
+	&-half--lg {
+		@include breakpoint-up(large) {
+			flex-basis: 50%;
+		}
+	}
 }
 
 // Grid
