@@ -27,12 +27,9 @@ btnHamburger.addEventListener('click', function () {
 });
 
 // iterate over each link tag and apply .current-link class to the one whose href matches current page's URL
-console.log('url', document.URL);
 const regex = /[^/]+$/;
 const everythingAfterSlash = document.URL.match(regex);
-console.log('url', everythingAfterSlash[0]);
 const currentLinks = document.querySelectorAll('a[href="' + everythingAfterSlash[0] + '"]');
-console.log('currentLinks', currentLinks);
 currentLinks.forEach(function (link) {
 	link.className += ' current-link';
 });

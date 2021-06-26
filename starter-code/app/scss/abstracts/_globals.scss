@@ -38,20 +38,51 @@ p {
 	color: $grayishDarkBlue;
 }
 
+.par-primary {
+	font-size: 1rem;
+	line-height: 30px;
+	font-family: $public;
+	color: $grayishDarkBlue;
+}
+
 .spacer {
 	height: 1.25rem;
 }
 
 .heading {
 	font-size: $font-lg;
-	font-family: $ibarra;
 	font-weight: bold;
+	font-family: $ibarra;
 	line-height: 42px;
 	letter-spacing: -0.36px;
+
+	&--secondary {
+		font-family: $ibarra;
+		line-height: 42px;
+		font-size: 2rem;
+		font-weight: 400;
+		letter-spacing: -0.29px;
+
+		&--slider {
+			font-family: $ibarra;
+			line-height: 36px;
+			font-size: 2rem;
+			font-weight: 400;
+			letter-spacing: -0.29px;
+		}
+	}
 }
 
 .preview {
 	margin-bottom: 2rem;
+}
+
+.tag {
+	color: $cyan;
+	line-height: 1.875rem;
+	font-family: $public;
+	font-weight: bold;
+	font-size: 13px;
 }
 
 h1 {
