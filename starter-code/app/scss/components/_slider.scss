@@ -15,4 +15,26 @@
         padding: 1.5rem 0;
         text-align: right;
     }
+
+    > * {
+
+        @include breakpoint-up(medium) {
+
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+
+            &:last-child {
+                flex-direction: row-reverse;
+            }
+
+            .slider__text {
+                margin: 0 2rem;
+
+                .par-primary {
+                    opacity: 50%;
+                }
+            }
+        }
+    }
 }
