@@ -83,6 +83,11 @@ p {
 	font-family: $public;
 	font-weight: bold;
 	font-size: 13px;
+
+	@include breakpoint-up(large) {
+		font-size: 1rem;
+		padding: 0.5rem 0;
+	}
 }
 
 h1 {
@@ -144,8 +149,8 @@ a:hover {
 	&--pt {
 		padding-top: 2rem;
 
-		@include breakpoint-up(large) {
-			padding-top: 3.75rem;
+		@include breakpoint-up(medium) {
+			padding-top: 5rem;
 		}
 	}
 	&--pr {
@@ -186,12 +191,13 @@ a:hover {
 	&--lg {
 		@include breakpoint-up(large) {
 			display: flex;
+			justify-content: space-between;
 		}
 	}
 
 	&-half--lg {
 		@include breakpoint-up(large) {
-			flex-basis: 50%;
+			flex-basis: calc(50% - 2rem);
 		}
 	}
 }

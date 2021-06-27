@@ -121,6 +121,12 @@ p {
   font-weight: bold;
   font-size: 13px;
 }
+@media (min-width: 64em) {
+  .tag {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+}
 
 h1 {
   font-size: 2.5rem;
@@ -188,9 +194,9 @@ a:hover {
 .container--pt {
   padding-top: 2rem;
 }
-@media (min-width: 64em) {
+@media (min-width: 48em) {
   .container--pt {
-    padding-top: 3.75rem;
+    padding-top: 5rem;
   }
 }
 .container--pr {
@@ -226,11 +232,12 @@ a:hover {
 @media (min-width: 64em) {
   .flex--lg {
     display: flex;
+    justify-content: space-between;
   }
 }
 @media (min-width: 64em) {
   .flex-half--lg {
-    flex-basis: 50%;
+    flex-basis: calc(50% - 2rem);
   }
 }
 
@@ -323,6 +330,7 @@ a:hover {
 }
 .btn--secondary:hover {
   background: #33323d;
+  color: #fafafa;
 }
 
 .form label {
@@ -352,6 +360,16 @@ a:hover {
 .slider__next {
   padding: 1.5rem 0;
   text-align: right;
+}
+.slider > *:hover {
+  background: #33323d;
+  color: #fafafa;
+}
+.slider > *:hover svg path {
+  stroke: white;
+}
+.slider > *:hover * {
+  color: #fafafa;
 }
 @media (min-width: 48em) {
   .slider > * {
@@ -505,6 +523,33 @@ a:hover {
   }
   .detail .hr-section .heading {
     margin: 15px 0;
+  }
+}
+@media (min-width: 64em) {
+  .detail .hr-section {
+    display: block;
+    flex-basis: 350px;
+    justify-self: center;
+    margin: 0 auto;
+  }
+  .detail .hr-section p {
+    margin: 0.5rem 0;
+  }
+  .detail .hr-section button {
+    margin: 2rem 0 3rem 0;
+  }
+  .detail .hr-section .heading {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 64em) {
+  .detail .heading--secondary {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .detail p {
+    margin-bottom: 2rem;
   }
 }
 

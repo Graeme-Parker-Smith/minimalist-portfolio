@@ -27,5 +27,36 @@
                 margin: 15px 0;
             }
         }
+
+        @include breakpoint-up(large) {
+            display: block;
+            flex-basis: 350px;
+            justify-self: center;
+            margin: 0 auto;
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            button {
+                margin: 2rem 0 3rem 0;
+            }
+
+            .heading {
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    @include breakpoint-up(large) {
+        .heading--secondary {
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
     }
 }

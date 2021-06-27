@@ -1,25 +1,37 @@
 .slider {
-    border-top: 1px solid rgba(51,50,61, 15%);
-    border-bottom: 1px solid rgba(51,50,61, 15%);
+    border-top: 1px solid rgba(51, 50, 61, 15%);
+    border-bottom: 1px solid rgba(51, 50, 61, 15%);
 
     svg {
         margin-bottom: 0.5rem;
     }
-    
+
     &__prev {
         padding: 1.5rem 0;
-        border-right: 1px solid rgba(51,50,61, 15%);
+        border-right: 1px solid rgba(51, 50, 61, 15%);
     }
-    
+
     &__next {
         padding: 1.5rem 0;
         text-align: right;
     }
 
     > * {
+        &:hover {
+            background: $grayishDarkBlue;
+            color: $veryLightGray;
+
+            svg {
+                path {
+                    stroke: white;
+                }
+            }
+            * {
+                color: $veryLightGray;
+            }
+        }
 
         @include breakpoint-up(medium) {
-
             display: flex;
             align-items: center;
             // justify-content: space-between;

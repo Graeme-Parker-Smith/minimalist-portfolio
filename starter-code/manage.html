@@ -40,16 +40,15 @@
 			</div>
 		</header>
 
-		<main class="detail">
-			<div class="container">
-				<img src="" alt="" />
-				<picture>
-					<source media="(min-width: 1024px)" srcset="images/detail/desktop/image-manage-hero.jpg" />
-					<source media="(min-width: 768px)" srcset="images/detail/tablet/image-manage-hero.jpg" />
-					<img src="images/detail/mobile/image-manage-hero.jpg" alt="Project Preview" class="preview" />
-				</picture>
+		<main class="detail container container--pt">
+			<picture>
+				<source media="(min-width: 1024px)" srcset="images/detail/desktop/image-manage-hero.jpg" />
+				<source media="(min-width: 768px)" srcset="images/detail/tablet/image-manage-hero.jpg" />
+				<img src="images/detail/mobile/image-manage-hero.jpg" alt="Project Preview" class="preview" />
+			</picture>
 
-				<div class="hr-section">
+			<div class="flex--lg">
+				<div class="hr-section flex-half--lg">
 					<hr />
 					<h1 class="heading">Manage</h1>
 					<p>
@@ -63,29 +62,39 @@
 					<hr />
 				</div>
 
-				<h2 class="heading--secondary">Project Background</h2>
-				<p>
-					This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to
-					practice building websites to a design and project brief. Each challenge includes mobile and desktop
-					designs to show how the website should look at different screen sizes. Creating these projects has
-					helped me refine my workflow and solve real-world coding problems. I’ve learned something new with
-					each project, helping me to improve and adapt my style.
-				</p>
-				<h2 class="heading--secondary">Static Previews</h2>
-				<picture>
-					<source media="(min-width: 1024px)" srcset="images/detail/desktop/image-manage-preview-1.jpg" />
-					<source media="(min-width: 768px)" srcset="images/detail/tablet/image-manage-preview-1.jpg" />
-					<img src="images/detail/mobile/image-manage-preview-1.jpg" alt="Project Preview" class="preview" />
-				</picture>
-				<picture>
-					<source media="(min-width: 1024px)" srcset="images/detail/desktop/image-manage-preview-2.jpg" />
-					<source media="(min-width: 768px)" srcset="images/detail/tablet/image-manage-preview-2.jpg" />
-					<img src="images/detail/mobile/image-manage-preview-2.jpg" alt="Project Preview" class="preview" />
-				</picture>
+				<div class="flex-half--lg">
+					<h2 class="heading--secondary">Project Background</h2>
+					<p>
+						This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to
+						practice building websites to a design and project brief. Each challenge includes mobile and
+						desktop designs to show how the website should look at different screen sizes. Creating these
+						projects has helped me refine my workflow and solve real-world coding problems. I’ve learned
+						something new with each project, helping me to improve and adapt my style.
+					</p>
+					<h2 class="heading--secondary">Static Previews</h2>
+					<picture>
+						<source media="(min-width: 1024px)" srcset="images/detail/desktop/image-manage-preview-1.jpg" />
+						<source media="(min-width: 768px)" srcset="images/detail/tablet/image-manage-preview-1.jpg" />
+						<img
+							src="images/detail/mobile/image-manage-preview-1.jpg"
+							alt="Project Preview"
+							class="preview"
+						/>
+					</picture>
+					<picture>
+						<source media="(min-width: 1024px)" srcset="images/detail/desktop/image-manage-preview-2.jpg" />
+						<source media="(min-width: 768px)" srcset="images/detail/tablet/image-manage-preview-2.jpg" />
+						<img
+							src="images/detail/mobile/image-manage-preview-2.jpg"
+							alt="Project Preview"
+							class="preview"
+						/>
+					</picture>
+				</div>
 			</div>
 
-			<div class="slider flex flex-jc-sb container">
-				<div class="slider__prev flex-half">
+			<div class="slider flex flex-jc-sb">
+				<a href="#" class="slider__prev flex-half">
 					<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
 						<path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
 					</svg>
@@ -93,9 +102,9 @@
 						<div class="heading--secondary--slider">Fylo</div>
 						<div class="par-primary">Previous Project</div>
 					</div>
-				</div>
+				</a>
 
-				<div class="slider__next flex-half">
+				<a href="#" class="slider__next flex-half">
 					<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
 						<path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
 					</svg>
@@ -103,10 +112,10 @@
 						<div class="heading--secondary--slider">Bookmark</div>
 						<div class="par-primary">Next Project</div>
 					</div>
-				</div>
+				</a>
 			</div>
 
-			<section class="cta container container--py">
+			<section class="cta container--pt">
 				<div class="cta__heading heading">Interested in doing a project together?</div>
 				<hr />
 				<button class="btn btn--secondary">Contact Me</button>
