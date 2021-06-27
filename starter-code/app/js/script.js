@@ -29,7 +29,10 @@ btnHamburger.addEventListener('click', function () {
 // iterate over each link tag and apply .current-link class to the one whose href matches current page's URL
 const regex = /[^/]+$/;
 const everythingAfterSlash = document.URL.match(regex);
-const currentLinks = document.querySelectorAll('a[href="' + everythingAfterSlash[0] + '"]');
+let currentLinks = document.querySelectorAll('a[href="' + everythingAfterSlash[0] + '"]' || 'a[href="portfolio.html"]');
+if (currentLinks.length === 0) {
+	currentLinks = document.querySelectorAll('a[href="portfolio.html"]');
+}
 currentLinks.forEach(function (link) {
 	link.className += ' current-link';
 });
