@@ -1,5 +1,5 @@
 .portfolio {
-    > section {
+    > section:not(:last-child) {
         .preview {
             width: 100%;
         }
@@ -8,6 +8,26 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .hr-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-self: stretch;
+                border-top: 1px solid rgba(51, 50, 61, 15%);
+                border-bottom: 1px solid rgba(51, 50, 61, 15%);
+                hr {
+                    display: none;
+                }
+
+                a {
+                    align-self: flex-start;
+                }
+            }
 
             > * {
                 flex-basis: calc(50% - 2rem);
